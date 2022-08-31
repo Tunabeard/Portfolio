@@ -1,0 +1,31 @@
+/* 360px min width for body */
+
+.radiostring {
+  display: inline-block;
+}
+
+label, textarea, input[type="text"] {
+  display: block;
+  width: 100%;
+}
+
+.abc {
+  display: none;
+}
+
+.Input {
+  margin-left: 197px;
+  margin-top: -19px;
+}
+
+@media all and (max-width: 640px) {
+  
+  .abc {
+    display: inline;
+  }
+
+  .Input {
+    margin: 0;
+  }
+  
+}

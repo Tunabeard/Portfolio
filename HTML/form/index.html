@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Домашка №8А</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body style="font-family: Arial">
+  <div class="Form" style="padding: 0em 2em 0em 1em">
+    <form method=post action="http://fe.it-academy.by/TestForm.php">
+      
+      <p>Для публикации вашей статьи заполните, <br class="abc">пожалуйста, следующую форму:</p><br>
+      
+      <label>Название статьи:<br class="abc">
+        <div class="Input">
+          <input type="text" name="article_name">
+        </div>
+      </label><br>
+      
+      <label>Рубрика:<br class="abc">
+        <div class="Input">
+          <select name="rubric">
+            <option>компьютерная техника</option>
+            <option>графика и дизайн</option>
+            <option selected>программирование</option>
+          </select>
+        </div>
+      </label><br>
+      
+      <label>Публикация:<br class="abc">
+        <div class="Input">
+          <div class="radiostring"><input type="radio" name="publication" value="site">на сайте</div><br class="abc">
+          <div class="radiostring"><input type="radio" name="publication" value="journal">в журнале</div><br class="abc">
+          <div class="radiostring"><input type="radio" name="publication" value="both">на сайте и в журнале</div>
+        </div>
+      </label><br>
+      
+      <label>Разрешить комментарии:
+        <div style="display: inline-block">
+          <input type="checkbox" name="comments_allow" value="allow">
+        </div>
+      </label><br><br>
+      
+      <label>Текст статьи:<br>
+        <textarea></textarea>
+      </label>
+      
+    </form>
+  </div>
+</body>
+
+</html>

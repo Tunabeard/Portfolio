@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Домашка №6Г-Б</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script src="script.py"></script>
+  <style>
+    .clearfix:after {
+      content: "."; visibility: hidden; display: block; height: 0; clear: both;
+    }
+    div div {
+      width: 76px; height: 78px; float: right;
+      background: url('images/stars.gif');
+    }
+    div:hover, div:hover ~ div {
+      background-position-x: -76px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Необходимо менять width в зависимости от количества звёзд -->
+  <div class="clearfix" style="width: 380px">
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+</body>
+
+</html>

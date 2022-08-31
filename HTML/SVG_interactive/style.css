@@ -1,0 +1,13 @@
+.SubApples { display: none }
+#WindowLeft, #WindowRight, #Rays, text { pointer-events: none }
+
+.Apples:hover { fill: yellowgreen }
+.Apples:hover + ellipse { display: block }
+#Pipe:hover + g ellipse { fill: white !important }
+#Roof:hover { transform: scaleY(-1) }
+#Roof:hover + text { display: block !important }
+#WindowBackground:hover ~ #WindowLeft { transform: skewY(27deg) scaleX(-0.5) }
+#WindowBackground:hover ~ #WindowRight { transform-origin: 215px 275px !important; transform: skewY(-27deg) scaleX(-0.5) }
+#Sun:hover ~ #Clouds ellipse { display: none }
+#Sun:hover ~ #Rays { stroke: orange !important }
+#Clouds:hover + path { stroke-opacity: 1 !important }

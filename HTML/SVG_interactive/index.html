@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Домашка №9Б</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <svg width="500" height="400" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/2000/svg'>
+    <!-- Труба -->
+    <rect id="Pipe" x="100" y="150" width="40" height="70" fill="indianred" />
+    <!-- Дым -->
+    <g>
+      <ellipse cx="120" cy="100" rx="20" ry="30" style="fill: dimgray" />
+      <ellipse cx="100" cy="80" rx="20" ry="30" style="fill: gray" />
+      <ellipse cx="130" cy="60" rx="20" ry="30" style="fill: darkgray" />
+    </g>
+    <!-- Дом -->
+    <rect x="80" y="250" width="200" height="120" fill="sandybrown" />
+    <!-- Крыша -->
+    <path id="Roof" d="M 50 250 h 260 l -130 -90 Z" fill="sienna" style="transform-origin: 188px 213px" />
+    <text x="95" y="200" style="font-weight: bold; display: none; fill: white">КРЫША ПОЕХАЛА!!!</text>
+    <!-- То, что за окнами -->
+    <g>
+      <rect id="WindowBackground" x="145" y="275" width="70" height="70" fill="darkkhaki" stroke="sienna" stroke-width="7" />
+      <text x="168" y="295" style="font-weight: bold">БУ!</text>
+      <g fill="gray" style="pointer-events: none">
+        <ellipse cx="181" cy="315" rx="20" ry="14" />
+        <rect x="171" y="318" width="20" height="15" stroke="gray" stroke-width="6" stroke-dasharray="2,2" />
+        <ellipse cx="171" cy="315" rx="6" ry="6" fill="white" />
+        <ellipse cx="191" cy="315" rx="6" ry="6" fill="white" />
+      </g>
+    <!-- Окна -->
+      <rect id="WindowLeft" x="145" y="275" width="35" height="70" fill="steelblue" stroke="sienna" stroke-width="7" style="transform-origin: 145px 275px" />
+      <rect id="WindowRight" x="180" y="275" width="35" height="70" fill="steelblue" stroke="sienna" stroke-width="7" style="transform-origin: 180px 275px" />
+    </g>
+    <!-- Солнце -->
+    <ellipse id="Sun" cx="340" cy="40" rx="30" ry="30" fill="gold" stroke="white" stroke-width="5" />
+    <!-- Лучи -->
+    <ellipse id="Rays" cx="340" cy="40" rx="48" ry="48" fill="transparent" style="stroke: white" stroke-width="30" stroke-dasharray="8, 10" />
+    <!-- Облака -->
+    <g id="Clouds">
+      <ellipse cx="400" cy="60" rx="50" ry="20" fill="gainsboro" />
+      <ellipse cx="350" cy="80" rx="50" ry="20" fill="gainsboro" />
+      <ellipse cx="300" cy="70" rx="50" ry="20" fill="gainsboro" />
+    </g>
+    <!-- Дождь -->
+    <path d="M 270 110 l -10 20 M 310 110 l -10 20 M 350 110 l -10 20 M 390 110 l -10 20 M 430 110 l -10 20 M 280 130 l -10 20 M 320 130 l -10 20 M 360 130 l -10 20 M 400 130 l -10 20" stroke="lightslategray" stroke-width="4" stroke-linecap="round" stroke-opacity="0" />
+    <!-- Ствол -->
+    <rect x="380" y="300" width="30" height="70" fill="peru" />
+    <!-- Крона -->
+    <ellipse cx="395" cy="230" rx="60" ry="80" fill="yellowgreen" />
+    <!-- Яблочки -->
+    <g style="fill: firebrick">
+      <ellipse class="Apples" cx="360" cy="210" rx="12" ry="12" />
+      <ellipse class="SubApples" cx="360" cy="358" rx="12" ry="12" />
+      <ellipse class="Apples" cx="410" cy="190" rx="12" ry="12" />
+      <ellipse class="SubApples" cx="410" cy="358" rx="12" ry="12" />
+      <ellipse class="Apples" cx="390" cy="240" rx="12" ry="12" />
+      <ellipse class="SubApples" cx="390" cy="358" rx="12" ry="12" />
+      <ellipse class="Apples" cx="430" cy="250" rx="12" ry="12" />
+      <ellipse class="SubApples" cx="430" cy="358" rx="12" ry="12" />
+      <ellipse class="Apples" cx="370" cy="280" rx="12" ry="12" />
+      <ellipse class="SubApples" cx="370" cy="358" rx="12" ry="12" />
+    </g>
+    <!-- Трава -->
+    <rect x="335" y="358" width="120" height="24" fill="forestgreen" rx="60" />
+    <!-- Костыль, обеспечивающий якобы скругление только верхних углов у травы -->
+    <rect x="335" y="370" width="120" height="12" fill="white" />
+  
+  </svg>
+</body>
+
+</html>
